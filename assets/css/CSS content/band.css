@@ -1,0 +1,31 @@
+#content .band-about {
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .team-members {
+    margin-top: 47px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-image {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #content .member-mobile {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .member-image {
+        width: 60%;
+    }
+}

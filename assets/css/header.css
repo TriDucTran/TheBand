@@ -1,0 +1,137 @@
+/* CSS for header and navbar */
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#navbar {
+    display: inline-block;
+}
+
+#navbar, .sub-nav {
+    list-style-type: none;
+}
+
+#navbar>li {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#navbar li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#navbar li:hover .sub-nav {
+    display: block;
+}
+
+#navbar>li:hover>a,
+#navbar .sub-nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#navbar .sub-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    min-width: 160px;
+}
+
+#navbar .sub-nav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#navbar .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .mobile-menu-btn {
+    display: none;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #navbar,
+    #navbar > li {
+        display: block;
+    }
+
+    #navbar > li:first-child {
+        display: inline-block;
+    }
+    
+    #navbar li a {
+        padding: 1px 24px;
+    }
+
+    #navbar .sub-nav {
+        position: initial;
+        background: #333;
+    }
+    
+    #navbar .sub-nav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+}

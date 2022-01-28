@@ -1,0 +1,50 @@
+.contact-section {
+    margin-top: 48px;
+}
+
+.contact-section .contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-btn {
+    font-size: 15px;
+    color: #fff;
+    background: #000;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-form .form-btn:hover {
+    color: #000;
+    background: #ccc;
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #contact .contact-mobile {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    #contact .contact-form-mobile {
+        width: 100%;
+    }
+}

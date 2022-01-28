@@ -1,0 +1,40 @@
+#content .place-list {
+    margin-top: 32px;
+}
+
+#content .place-img {
+    width: 100%;
+    display: block;
+}
+
+#content .place-img:hover {
+    opacity: 0.6;
+}
+
+#content .place-content {
+    background: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+#content .place-heading {
+    font-weight: 600;
+}
+
+#content .place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+#content .place-description {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #content .place-mobile {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+}
